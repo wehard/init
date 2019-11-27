@@ -1,0 +1,5 @@
+AWS (amazon web services)
+
+find public ip 13.33.242.74
+whois 13.33.242.74 | grep "Name"
+Can also use dig slash16.org and identify authorative dns
