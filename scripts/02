@@ -1,0 +1,19 @@
+#!/bin/bash
+ID=$(id -u)
+
+if [ $# != 1 ]
+then
+	printf "Enter active user to delete\n"
+	exit 1
+fi
+
+if [ $ID != 0 ]
+then
+	printf "Must be run as root!\n"
+	exit 1
+else
+	pgrep -u test
+	ps -fp $(pgrep -u test)
+	killall -KILL -u test
+	userdel -r test
+fi
