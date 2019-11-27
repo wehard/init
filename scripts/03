@@ -1,8 +1,10 @@
 #!/bin/bash
 
-HOMEUSED=$(df -h | grep /Users  | awk -F' ' '{print $3}')
-HOMETOTAL=$(df -h | grep /Users  | awk -F' ' '{print $2}')
+ID=$(id -u)
+
+HOMEUSED=$(df -h | grep /run/user/$ID | awk -F' ' '{print $3}')
+HOMETOTAL=$(df -h | grep /run/user/$ID  | awk -F' ' '{print $2}')
 
 printf "Hello, %s!\n" $USER
 printf "You have %s/%s of drive space left in your home directory.\n" $HOMEUSED $HOMETOTAL
-printf "Good luck with that!"
+printf "Good luck with that!\n"
