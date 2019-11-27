@@ -1,0 +1,7 @@
+ssh:
+	use ssh command in terminal: ssh username@ip
+	accept key fingerprint if new host
+	enter password
+	you are in!
+
+graphic:

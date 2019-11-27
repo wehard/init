@@ -1,0 +1,2 @@
+# append ampersand
+tail -f /var/log/syslog &

@@ -1,1 +1,2 @@
-cron
+cron is a utility that can be used to schedule regular jobs
+crontab file contains the schedule

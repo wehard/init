@@ -1,2 +1,4 @@
 in ~/.ssh/authorized_keys
 or just ~/.ssh/ is also possible
+
+#Authorized keys are configured separately for each user - usually in the .ssh/authorized_keys file in the user's home directory. However, the location of the keys can be configured in SSH server configuration files, and is often changed to a root-owned location in more secure environments.
